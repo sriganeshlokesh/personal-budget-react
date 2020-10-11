@@ -1,0 +1,11 @@
+{
+    "editor.formatOnSave": true,
+    "[search-result]": {
+
+        "editor.lineNumbers": "off"
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+      },
+      "emmet.triggerExpansionOnTab": true
+}
