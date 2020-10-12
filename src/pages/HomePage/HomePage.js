@@ -1,6 +1,8 @@
 import React from "react";
+import PieChart from "../../components/PieChart/PieChart";
+import DonutChart from "../../components/DonutChart/DonutChart";
 
-function HomePage() {
+const HomePage = () => {
   return (
     <div className="container center">
       <section>
@@ -46,18 +48,16 @@ function HomePage() {
         <article role="article">
           <h1>Chart.js</h1>
           <p>
-            <canvas id="myChart" width="400" height="400"></canvas>
+            <PieChart />
           </p>
         </article>
-        <article role="article" id="d3">
+        <article role="article">
           <h1>D3.js</h1>
-          <p>
-            <svg className="pie-chart" width="600" height="800"></svg>
-          </p>
+          <DonutChart />
         </article>
       </section>
     </div>
   );
-}
+};
 
 export default HomePage;

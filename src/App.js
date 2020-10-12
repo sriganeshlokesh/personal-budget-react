@@ -6,7 +6,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import Footer from "./components/Footer/Footer";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
