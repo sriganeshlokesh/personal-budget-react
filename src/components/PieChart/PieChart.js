@@ -7,7 +7,6 @@ const PieChart = () => {
     title: [],
     budget: [],
   });
-
   const getData = () => {
     getChartData().then((res) => {
       setChart({
@@ -47,8 +46,6 @@ const PieChart = () => {
       },
     ],
   };
-
-  const options = {};
 
   return (
     <Pie

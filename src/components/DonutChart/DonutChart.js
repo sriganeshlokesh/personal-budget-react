@@ -7,6 +7,7 @@ const DonutChart = () => {
     title: [],
     budget: [],
   });
+  const chartRef = useRef(null);
 
   const width = 650;
   const height = 550;
@@ -56,8 +57,9 @@ const DonutChart = () => {
       .arc()
       .outerRadius(radius * 0.9)
       .innerRadius(radius * 0.9);
+
     var svg = d3
-      .select("figure#pie")
+      .select(chartRef.current)
       .append("svg")
       .attr("width", width)
       .attr("height", height)
@@ -113,7 +115,7 @@ const DonutChart = () => {
     getData();
   }, []);
 
-  return <figure id="pie"></figure>;
+  return <figure ref={chartRef}></figure>;
 };
 
 export default DonutChart;
